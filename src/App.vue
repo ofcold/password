@@ -99,6 +99,7 @@
 	import OfcoldInputDot from './OfcoldInputDot';
 
 	export default {
+		name: 'OfcoldPassword',
 		mixins: [idMixin, formMixin, formSizeMixin, formStateMixin],
 		data() {
 			return {
