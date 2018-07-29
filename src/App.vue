@@ -92,10 +92,10 @@
 </template>
 
 <script>
-	import idMixin from '../../mixins/id';
-	import formMixin from '../../mixins/form';
-	import formSizeMixin from '../../mixins/form-size';
-	import formStateMixin from '../../mixins/form-state';
+	import idMixin from 'bootstrap-vue/src/mixins/id';
+	import formMixin from 'bootstrap-vue/src/mixins/form';
+	import formSizeMixin from 'bootstrap-vue/src/mixins/form-size';
+	import formStateMixin from 'bootstrap-vue/src/mixins/form-state';
 
 	export default {
 		mixins: [idMixin, formMixin, formSizeMixin, formStateMixin],
