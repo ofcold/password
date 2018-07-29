@@ -42,7 +42,7 @@
 			<br>
 			<span class="condition-title">
 				<i class="icon icon-unlock"></i>
-				{{ this.$t('users.password.meet_conditions') }}:
+				您的密码需要满足以下条件:
 			</span>
 			<dl class="ml-2">
 				<dd :class="'text-' + (checked.symbol ? 'success' : 'danger')">
@@ -50,12 +50,12 @@
 						'fa',
 						'fa-' + (checked.symbol ? 'check-circle' : 'circle')
 					]"></i>
-					{{ this.$t('users.password.strict_symbol') }}
+					至少包括一个数字或一个
 					<span
-						 v-ofcold-tooltip.hover
-						 :title="this.$t('users.password.allowed_symbol')"
+						 v-b-tooltip.hover
+						 title="允许使用常用的标点符号以及 ^ = + $ # 或 @ 等不同符号。"
 						 class="border-bottom border-dashed-bottom border-dark">
-						{{ this.$t('users.password.symbol') }}
+						符号
 					</span>。
 				</dd>
 
@@ -67,12 +67,12 @@
 						'fa-' + (checked.upper ? 'check-circle' : 'circle')
 						]"
 					></i>
-					{{ this.$t('users.password.strict_upper') }}
+					同时包括小写和大写拉丁
 					<span
-						 v-ofcold-tooltip.hover
-						 :title="this.$t('users.password.allowed_character')"
+						 v-b-tooltip.hover
+						 title="允许使用的拉丁字符为 A 到 Z 以及 a 到 z。"
 						 class="border-bottom border-dashed-bottom border-dark">
-						{{ this.$t('users.password.character') }}
+						字符
 					</span>。
 				</dd>
 				<dd
@@ -84,7 +84,7 @@
 						'fa-' + (checked.minlength ? 'check-circle' : 'circle')
 						]"
 					></i>
-					{{ this.$t('users.password.max_length') }}
+					至少为 8 个字符长.
 				</dd>
 			</dl>
 		</div>
@@ -96,6 +96,7 @@
 	import formMixin from 'bootstrap-vue/src/mixins/form';
 	import formSizeMixin from 'bootstrap-vue/src/mixins/form-size';
 	import formStateMixin from 'bootstrap-vue/src/mixins/form-state';
+	import OfcoldInputDot from './OfcoldInputDot';
 
 	export default {
 		mixins: [idMixin, formMixin, formSizeMixin, formStateMixin],
@@ -129,6 +130,9 @@
 				type: [Boolean, String],
 				default: false
 			}
+		},
+		components: {
+			OfcoldInputDot
 		},
 		computed: {
 			computedAriaInvalid () {
