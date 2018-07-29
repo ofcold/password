@@ -220,3 +220,61 @@
 		}
 	}
 </script>
+
+<style lang="scss" scoped>
+	.ofcold-field {
+		&-password {
+
+			position: relative;
+			z-index: 0;
+
+			.form-control[type="password"] {
+				text-overflow: ellipsis;
+				text-shadow: none;
+				-webkit-transition: all .15s ease-in-out;
+				transition: all .15s ease-in-out;
+				letter-spacing: .34rem;
+			}
+			.show-or-hide {
+				cursor: pointer;
+				position: absolute;
+				top: .7rem;
+				right: .7rem;
+			}
+		}
+
+		.password-tips {
+			font-size: .8rem;
+			max-height: 0;
+			opacity: 0;
+			overflow: hidden;
+			-webkit-transition: max-height .2.7s ease, opacity .2.7s ease;
+			transition: max-height .2.7s ease, opacity .2.7s ease;
+			-webkit-transition-delay: 0ms;
+			transition-delay: 0ms;
+
+			&.transition {
+				opacity: 1;
+				max-height: 270px;
+				overflow: visible;
+				-webkit-transition-delay: .2, .2, .34s;
+				transition-delay: .2, .2, .34s;
+				-webkit-transition-duration: .4s;
+				transition-duration: .4s
+			}
+
+			.condition-title {
+				margin-bottom: .34rem;
+				display: block;
+				color: #727477;
+			}
+
+			dl {
+				dd {
+					line-height: 1rem;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+</style>
