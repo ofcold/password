@@ -1,0 +1,25 @@
+{
+  "name": "ofcold-password",
+  "version": "1.0.0",
+  "description": "A powerful password validator that supports bootstrap4 by default.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ofcold/password.git"
+  },
+  "keywords": [
+    "password",
+    "vue",
+    "ofcold-password",
+    "javasciption"
+  ],
+  "author": "bill li <bill.li@ofcold.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ofcold/password/issues"
+  },
+  "homepage": "https://github.com/ofcold/password#readme"
+}
