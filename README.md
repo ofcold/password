@@ -36,3 +36,5 @@ export default {
 }
 
 ```
+
+<img src="./pass.gif">
