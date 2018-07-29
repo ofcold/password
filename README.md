@@ -37,4 +37,4 @@ export default {
 
 ```
 
-<img src="./pass.gif">
+![Preview]('./pass.gif')
