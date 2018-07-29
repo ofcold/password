@@ -37,4 +37,4 @@ export default {
 
 ```
 
-![Preview]('https://github.com/ofcold/password/blob/master/pass.gif?raw=true')
+![Preview](https://github.com/ofcold/password/blob/master/pass.gif?sanitize=true)
